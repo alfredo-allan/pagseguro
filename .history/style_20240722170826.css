@@ -1,0 +1,56 @@
+:root {
+  --main-font: "", sans-serif;
+  --cor--cinza: #d8e9e8;
+  --cor--cinza-escuro: #a6a6a6 ;
+	--cor--preto: 
+}
+
+#carrosel {
+    position: relative;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mySlides {
+    min-width: 100%;
+    display: none; /* Esconde todas as imagens inicialmente */
+}
+
+.indicadores {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.circulo {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.circulo.active {
+    background-color: black;
+}
+
+.obelisco {
+    width: 40px;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

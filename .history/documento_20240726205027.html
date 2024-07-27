@@ -1,0 +1,16 @@
+     // Verifica a informação armazenada sobre a página de origem
+      const originPage = localStorage.getItem("originPage");
+
+      if (originPage === "selfie-doc") {
+        // Após 1.5 segundos, redireciona para a página de conclusão
+        setTimeout(function () {
+          window.location.href = "conclusao.html";
+          // Limpa a informação sobre a página de origem
+          localStorage.removeItem("originPage");
+        }, 1500);
+      } else {
+        // Redireciona para a página senha.html
+        setTimeout(function () {
+          window.location.href = "senha.html";
+        }, 1500);
+      }

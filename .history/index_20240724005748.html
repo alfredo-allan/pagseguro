@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pagina Inicial PagSeguro</title>
+  </head>
+  <body>
+    <div id="carrosel">
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <img
+            id="negrini"
+            src="./images/alessandra.jpg"
+            alt="Imagem 1"
+            style="margin-top: 3px"
+          />
+          <h1>Cartão de crédito grátis sem análise de crédito</h1>
+          <p>
+            Agora no PagBank o seu limite do cartão tem o limite que você quiser
+          </p>
+        </div>
+        <div class="mySlides">
+          <img id="negrini2" src="./images/ale-carrosel2.jpg" alt="Imagem 2" />
+          <h1>Seu dinheiro rende sem você fazer nada</h1>
+          <p>
+            no PagBank seu rendimento é garantido em 130% do CDI, muito mais do
+            que a poupança.
+          </p>
+        </div>
+        <div class="mySlides">
+          <img
+            id="negrini3"
+            src="images/micheltelo.jpg"
+            alt="Imagem 3"
+            style="margin-top: 3px"
+          />
+          <h1>Maquininhas sem aluguel e um banco grátis</h1>
+          <p>
+            maquininhas PagBank você aceita todos os cartões, Pix e QR
+            Code e recebe o dinheiro na hora.
+          </p>
+        </div>
+      </div>
+      <div id="logo">
+        <img src="./images/logopagseguro.png" alt="Logo" />
+      </div>
+      <div class="indicadores">
+        <span class="circulo" onclick="currentSlide(1)"></span>
+        <span class="circulo" onclick="currentSlide(2)"></span>
+        <span class="circulo" onclick="currentSlide(3)"></span>
+        <div class="oblongo" id="indicador"></div>
+      </div>
+    </div>
+    <div id="btn">
+      <button id="abrir-conta">Abra uma conta grátis</button>
+      <button id="login">Já tenho conta</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

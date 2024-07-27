@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pagina Inicial PagSeguro</title>
+  </head>
+  <body>
+    <div id="carrosel">
+      <div class="slideshow-container">
+        <div id="negr">
+        <img id="negrini" class="mySlides" src="./images/alessandra.jpg" alt="Imagem 1" />
+        <h1>teste</h1>
+        <img src="./images/logopagseguro.jpg" alt="">
+        <p>teste</p>
+        </div>
+        <img id="ale-2" class="mySlides" src="./images/ale-carrosel2.jpg" alt="Imagem 2" />
+        <img  class="mySlides" src="images/micheltelo.jpg" alt="Imagem 3" />
+      </div>
+      <div class="indicadores">
+        <span class="circulo" onclick="currentSlide(1)"></span>
+        <span class="circulo" onclick="currentSlide(2)"></span>
+        <span class="circulo" onclick="currentSlide(3)"></span>
+      </div>
+      <div class="obelisco" onclick="nextSlide()">&#10095;</div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

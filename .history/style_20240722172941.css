@@ -1,0 +1,56 @@
+:root {
+  --main-font: "", sans-serif;
+  --cor--cinza: #d8e9e8;
+  --cor--cinza-background: #a6a6a6;
+  --cor--preto: #1c1916;
+  --cor--azul: #3378a3;
+}
+
+body {
+	background-color: var();
+}
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.mySlides {
+  display: none; /* Oculta os slides por padrão */
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%; /* Ajusta a imagem para ocupar a largura do container */
+}
+
+#logo {
+  position: absolute;
+  top: 10px; /* Ajuste a posição do logo conforme necessário */
+  right: 10px;
+}
+
+.indicadores {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.circulo {
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.obelisco {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+

